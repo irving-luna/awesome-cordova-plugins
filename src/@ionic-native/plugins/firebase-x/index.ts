@@ -840,6 +840,7 @@ export class FirebaseX extends IonicNativePlugin {
     documentId: string,
     document: object,
     collection: string,
+    timestamp: boolean,
     success: () => void,
     error: (err: string) => void
   ): Promise<any> {
