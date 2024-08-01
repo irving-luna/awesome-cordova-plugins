@@ -941,6 +941,7 @@ export class FirebaseX extends AwesomeCordovaNativePlugin {
    * @param {string} documentId - document ID to use when setting document in the collection.
    * @param {object} document - document object to set in collection.
    * @param {string} collection - name of top-level collection to set document in.
+   * @param {string} timestamp - adds to document lastupdated timestamp
    * @param {Function} success - callback function to call on successfully setting the document.
    * @param {Function} error - callback function which will be passed a {string} error message as an argument.
    */
@@ -949,6 +950,7 @@ export class FirebaseX extends AwesomeCordovaNativePlugin {
     documentId: string,
     document: object,
     collection: string,
+    timestamp:boolean,
     success: () => void,
     error: (err: string) => void
   ): Promise<any> {
